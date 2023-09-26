@@ -1,7 +1,11 @@
 var array = [];
 var normal = []
+var focar1 = document.getElementById("input_numero");
+var focar2 = document.getElementById("input_escolher");
+
 function mostrar() {
     var input = document.getElementById("input_numero").value;
+    focar1.focus()
     if (input == "") {
         var resultado = document.getElementById("resultado");
         resultado.textContent = "";
@@ -19,6 +23,7 @@ function mostrar() {
 function mostrarArray() {
     var resultado = document.getElementById("resultado");
     resultado.textContent = array.join(", ");
+    
 }
 function mostrarArrayNormal() {
     var resultado = document.getElementById("resultado");
@@ -41,6 +46,7 @@ function posicao() {
 function excluirArray() {
     var input = document.getElementById("input_numero").value;
     input = parseFloat(input);
+    focar1.focus();
     var indiceParaExcluir = array.indexOf(input);
     if (indiceParaExcluir !== -1) {
         array.splice(indiceParaExcluir, 1);
@@ -58,6 +64,7 @@ function substituirArray() {
     var input2 = document.getElementById("input_editar").value
     input2 = parseFloat(input2)
     console.log("entrei no subtituir")
+    focar2.focus()
     for (var x = 0; x < array.length; x++) {
         if (input1 == array[x]) {
             array[x] = input2;
