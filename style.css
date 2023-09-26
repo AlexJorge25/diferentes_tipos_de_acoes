@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: #F2E3D5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.conteiner {
+    width: 30vw;
+    height:75vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #3CA6A6;
+    border: 2px solid #012E40;
+    padding: 20px;
+    border-radius: 20px;
+}
+.tela {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2E3D5;
+    border: 1px solid #012E40;
+    border-radius: 10px;
+    width: 26vw;
+    height: 100vh;
+    padding: 5px;
+}
+.tela p {
+    color: #012E40;
+    font-family: monospace;
+    font-size: 2em;
+    word-wrap: break-word;
+}
+.forms {
+    margin: 10px 0px;
+}
+label {
+    font-family: monospace;
+    font-size: 1.5em;
+    color: #012E40;
+}
+input {
+    margin: 10px 0px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid transparent;
+}
+input:focus{
+    border: 1px solid #012E40;
+}
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.botao {
+    color: #012E40;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #F2E3D5;
+    border: none;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+.botao:hover {
+    background-color: #fff5ec;
+    border: 1px solid #012E40;
+}
+.parte2 label{
+    font-size: 1.4em;
+
+}
+.parte2 input{
+    width: 90px;
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio_dia_25-09</title>
+</head>
+
+<body>
+    <!--Faça uma página que permita ao usuário digitar números e inserir em um array. Na sequência crie um recurso que permita ao clique de um botão mostrar os números digitados em ordem crescente.-->
+    <section class="conteiner">
+        <div class="tela">
+            <p id="resultado"></p>
+        </div>
+        <div class="forms">
+            <label>Adicionar no Banco de Dados:</label>
+            <input type="number" min="0" placeholder="Number" id="input_numero">
+        </div>
+        <div class="parte2">
+            <label>Substituição:</label>
+            <input type="number" min="0" placeholder="escolher" id="input_escolher">
+            <input type="number" min="0" placeholder="editar" id="input_editar">
+        </div>
+        <div class="botoes">
+            <button type="submit" class="botao" onclick="mostrar()">Enviar</button>
+            <button type="submit" class="botao" onclick="crescente()">Crescente</button>
+            <button type="submit" class="botao" onclick="posicao()">Posição</button>
+            <button type="submit" class="botao" onclick="decrescente()">Decrescente</button>
+            <button type="submit" class="botao" onclick="mostrarArrayNormal()">Normal</button>
+            <button type="submit" class="botao" onclick="excluirArray()">Excluir</button>
+            <button type="submit" class="botao" onclick="substituirArray()">Substituir</button>
+        </div>
+
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
